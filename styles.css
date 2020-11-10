@@ -14,11 +14,13 @@ header
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
+    text-shadow: 2px 2px black;
 }
 
 section
 {
     font-size: 20px;
+    text-shadow: 2px 2px black;
 }
 
 .card-text
@@ -30,4 +32,5 @@ footer
 {
     text-align: center;
     font-size: 20px;
+    text-shadow: 2px 2px black;
 }
