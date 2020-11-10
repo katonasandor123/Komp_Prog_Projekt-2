@@ -1,0 +1,33 @@
+body
+{
+	background-image: url('hatter.png');
+	background-repeat: no-repeat;
+	font-family: Bahnschrift;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
+header
+{
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section
+{
+    font-size: 20px;
+}
+
+.card-text
+{
+    color: black;
+}
+
+footer
+{
+    text-align: center;
+    font-size: 20px;
+}
