@@ -84,3 +84,8 @@ div#wrapper
     margin-left: 60px;
     margin-right: 60px;
 }
+
+div.row
+{
+    text-align: center;
+}
