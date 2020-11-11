@@ -30,81 +30,132 @@
   </nav>
 
 <body>
+    <div id="wrapper">
     <header>
             <h1>Értékelőlap</h1>
     </header>
-    <main>
+    <main><p class="ertekelo">
         <br><br>
         <form id = "ertekelolap" name = "ertekelolap" method = "post">
+            Írásbeli pontszám: <input type="number" min="0" max="120" maxlength="3" name="j"> / 120
+            <br />
         Tartalom:
         <ul>
             <li>Fogalmak ismerete<br>
-                <input type = "radio" id = "a0" value = "a0" name = "a"><label for = "a">0 pont</label> 
-                <input type = "radio" id = "a1" value = "a1" name = "a"><label for = "a">1 pont</label>
-                <input type = "radio" id = "a2" value = "a2" name = "a"><label for = "a">2 pont</label>
+                <p><label for="a">Válassza ki hány pontot ad!</label>
+                <select id="a" name ="a">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+                </p>
+                
             </li>
             <li>Fogalmak definiálása, alkalmazása<br>
-                <input type = "radio" id = "b0" value = "b0" name = "b"><label for = "b">0 pont</label> 
-                <input type = "radio" id = "b1" value = "b1" name = "b"><label for = "b">1 pont</label>
-                <input type = "radio" id = "b2" value = "b2" name = "b"><label for = "b">2 pont</label>
+                <p><label for="b">Válassza ki hány pontot ad!</label>
+                    <select id="b" name ="b">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    </p>
+                
             </li>
             <li>Tartalmi kifejezés, elvek folyamatok ismerete<br>
-                <input type = "radio" id = "c0" value = "c0" name = "c"><label for = "c">0 pont</label>
-                <input type = "radio" id = "c2" value = "c2" name = "c"><label for = "c">2 pont</label> 
-                <input type = "radio" id = "c4" value = "c4" name = "c"><label for = "c">4 pont</label>
-                <input type = "radio" id = "c6" value = "c6" name = "c"><label for = "c">6 pont</label>
-                <input type = "radio" id = "c8" value = "c8" name = "c"><label for = "c">8 pont</label>
+                <p><label for="c">Válassza ki hány pontot ad!</label>
+                    <select id="c" name ="c">
+                        <option value="0">0</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                    </p>
+                
             </li>
             <li>Elvek, folyamatok alkalmazása<br>
-                <input type = "radio" id = "d0" value = "d0" name = "d"><label for = "d">0 pont</label> 
-                <input type = "radio" id = "d1" value = "d1" name = "d"><label for = "d">1 pont</label>
-                <input type = "radio" id = "d2" value = "d2" name = "d"><label for = "d">2 pont</label>
+                <p><label for="d">Válassza ki hány pontot ad!</label>
+                    <select id="d" name ="d">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    </p>
+                
             </li>
             <li>Összefüggések értelmezése<br>
-                <input type = "radio" id = "e0" value = "e0" name = "e"><label for = "e">0 pont</label> 
-                <input type = "radio" id = "e1" value = "e1" name = "e"><label for = "e">1 pont</label>
-                <input type = "radio" id = "e2" value = "e2" name = "e"><label for = "e">2 pont</label>
-                <input type = "radio" id = "e4" value = "e4" name = "e"><label for = "e">4 pont</label>
+                <p><label for="e">Válassza ki hány pontot ad!</label>
+                    <select id="e" name ="e">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                    </select>
+                    </p>
+                
             </li>
         </ul>
         Felépítés:
         <ul>
             <li>Időbeosztás<br>
-                <input type = "radio" id = "f0" value = "f0" name = "f"><label for = "f">0 pont</label> 
-                <input type = "radio" id = "f1" value = "f1" name = "f"><label for = "f">1 pont</label>
-                <input type = "radio" id = "f2" value = "f2" name = "f"><label for = "f">2 pont</label>
-                <input type = "radio" id = "f3" value = "f3" name = "f"><label for = "f">3 pont</label>
+                <p><label for="f">Válassza ki hány pontot ad!</label>
+                    <select id="f" name ="f">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    </p>
+                
             </li>
             <li>Felépítettség<br>
-                <input type = "radio" id = "g0" value = "g0" name = "g"><label for = "g">0 pont</label> 
-                <input type = "radio" id = "g1" value = "g1" name = "g"><label for = "g">1 pont</label>
-                <input type = "radio" id = "g2" value = "g2" name = "g"><label for = "g">2 pont</label>
-                <input type = "radio" id = "g3" value = "g3" name = "g"><label for = "g">3 pont</label>
+                <p><label for="g">Válassza ki hány pontot ad!</label>
+                    <select id="g" name ="g">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    </p>
+                
             </li>
         </ul>
         Előadás, szaknyelv:
         <ul>
             <li>Előadás<br>
-                <input type = "radio" id = "h0" value = "h0" name = "h"><label for = "h">0 pont</label> 
-                <input type = "radio" id = "h1" value = "h1" name = "h"><label for = "h">1 pont</label>
-                <input type = "radio" id = "h2" value = "h2" name = "h"><label for = "h">2 pont</label>
-                <input type = "radio" id = "h3" value = "h3" name = "h"><label for = "h">3 pont</label>
+                <p><label for="h">Válassza ki hány pontot ad!</label>
+                    <select id="h" name ="h">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    </p>
+                
             </li>
             <li>Szaknyelv<br>
-                <input type = "radio" id = "i0" value = "i0" name = "i"><label for = "i">0 pont</label> 
-                <input type = "radio" id = "i1" value = "i1" name = "i"><label for = "i">1 pont</label>
-                <input type = "radio" id = "i2" value = "i2" name = "i"><label for = "i">2 pont</label>
-                <input type = "radio" id = "i3" value = "i3" name = "i"><label for = "i">3 pont</label>
+                <p><label for="i">Válassza ki hány pontot ad!</label>
+                    <select id="i" name ="i">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    </p>
             </li>
         </ul>
 			<p>
-				<input type = "submit" value = "Küldés">
+                <input type="button" onclick="Submit()" value = "Értékel">
 				<input type = "reset" value = "Törlés">
-			</p>
+            </p>
+            <p id="eredmeny"></p>
+            <p id="jegy"></p>
+            <br />
 		</form>	
-    </main>
+    </p></main>
     <footer>
             &copy; Katona Sándor
     </footer>
+    </div>
 </body>
 </html>
