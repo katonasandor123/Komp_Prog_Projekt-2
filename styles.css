@@ -41,3 +41,34 @@ form
     font-size: 20px;
     text-shadow: 2px 2px black;
 }
+
+table
+{
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+    border-collapse: collapse;
+    width: 25%;
+}
+td, th
+{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+thead
+{
+    text-transform: uppercase;
+}
+
+.reszek-kep
+{
+    width: 700px;
+    height: 450px;
+}
+
+.reszek-kep2
+{
+    text-align: center;
+}
