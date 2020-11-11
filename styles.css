@@ -19,7 +19,7 @@ header
 
 section
 {
-    font-size: 20px;
+    font-size: 24px;
     text-shadow: 2px 2px black;
 }
 
@@ -88,4 +88,9 @@ div#wrapper
 div.row
 {
     text-align: center;
+}
+
+p.sorkizart
+{
+    text-align: justify;
 }
