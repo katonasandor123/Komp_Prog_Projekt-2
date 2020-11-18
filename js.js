@@ -9,29 +9,59 @@ function Submit(){
     var t = parseInt(document.getElementById("g").value);
     var s = parseInt(document.getElementById("h").value);
     var r = parseInt(document.getElementById("i").value);
-    
-    var elert = z + y + x + w + v + u + t + s + r;
-    var szazalek = elert / 30 * 100;
+    var q = parseInt(document.getElementById("irasbeli").value);
 
-    document.getElementById("eredmeny").innerHTML = "Az eredmény: " + elert + " pont, " + szazalek + "%";
+    var szobeli = z + y + x + w + v + u + t + s + r;
 
-    if (szazalek > 80){
-        document.getElementById("jegy").innerHTML = "5 (JELES)"
-    }
+    if (q < 15)
+    {
+        var elert = z + y + x + w + v + u + t + s + r + q;
+        var szazalek = elert / 150 * 100;
 
-    else if (szazalek > 60){
-        document.getElementById("jegy").innerHTML = "4 (JÓ)"
-    }
-
-    else if (szazalek > 40){
-        document.getElementById("jegy").innerHTML = "3 (KÖZEPES)"
-    }
-
-    else if (szazalek > 25){
-        document.getElementById("jegy").innerHTML = "2 (ELÉGSÉGES)"
-    }
-
-    else{
+        document.getElementById("eredmeny").innerHTML = "Az eredmény: " + elert + " pont, " + szazalek + "%";
         document.getElementById("jegy").innerHTML = "1 (ELÉGTELEN)"
+    }
+
+    
+    else if (szobeli < 4)
+    {
+        var elert = z + y + x + w + v + u + t + s + r + q;
+        var szazalek = elert / 150 * 100;
+
+        document.getElementById("eredmeny").innerHTML = "Az eredmény: " + elert + " pont, " + szazalek + "%";
+        document.getElementById("jegy").innerHTML = "1 (ELÉGTELEN)"
+    }
+
+    else
+    {
+        var elert = z + y + x + w + v + u + t + s + r + q;
+        var szazalek = elert / 150 * 100;
+
+        document.getElementById("eredmeny").innerHTML = "Az eredmény: " + elert + " pont, " + szazalek + "%";
+
+        if (szazalek > 80)
+        {
+            document.getElementById("jegy").innerHTML = "5 (JELES)"
+        }
+
+        else if (szazalek > 60)
+        {
+            document.getElementById("jegy").innerHTML = "4 (JÓ)"
+        }
+
+        else if (szazalek > 40)
+        {
+            document.getElementById("jegy").innerHTML = "3 (KÖZEPES)"
+        }
+
+        else if (szazalek > 25)
+        {
+            document.getElementById("jegy").innerHTML = "2 (ELÉGSÉGES)"
+        }
+
+        else
+        {
+            document.getElementById("jegy").innerHTML = "1 (ELÉGTELEN)"
+        }
     }
 }
