@@ -105,3 +105,19 @@ p.sorkizart
 {
     text-align: center;
 }
+
+.reszponziv
+{
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+    max-height: 450px;
+}
+
+.reszponziv2
+{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 220px;
+}
